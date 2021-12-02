@@ -1,0 +1,306 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.wrap{
+    max-width: 1536px;
+    margin: 0 auto;
+    background: #EFEFEF;
+    display: flex;
+    color: $text_color;
+    z-index: 10;
+    a{
+        text-decoration: none;
+    }
+}
+.side{
+    position: fixed;
+    width: 17%;
+    background: linear-gradient(180deg, rgba(37, 62, 67, 0.72) 0%, #041B1F 100%);
+    height: 800px;
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 17px;
+        padding-left: 38px;
+        padding-bottom: 54px;
+        color: $second_color;
+        .bright{
+            color: $primary_color;
+        }
+    }
+    .menu{
+        li{
+            margin-left: 36px;
+            margin-right: 10px;
+            margin-bottom: 25px;
+            text-align: left;
+            a{
+                color: $second_color;
+                font-size: 18px;
+                display: block;
+                padding: 10px 15px;
+                cursor: pointer;
+                &:hover{
+                    background: $primary_color;
+                    border-radius: 30px;
+                }
+                i{
+                    margin-right: 28px;
+                }
+            }
+            
+        }
+    }
+}
+.container{
+    width: 83%;
+    background: url(../images/001.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 20px 0;
+    padding-right: 51px;
+    padding-left: 61px;
+    margin-left: 17%;
+    .header--button{
+        display: flex;
+        justify-content: end;
+        .header__login--button,.header__register--button{
+            font-size: 14px;
+            background: $second_color;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 7px;
+            padding: 6px 13px;
+            margin-right: 12px;
+            text-align: center;
+            &:hover{
+                color: $second_color;
+                background: #1C383E;
+            }
+        }
+    }
+    .content{
+        width: 100%;
+        margin-top: 35px;
+        .more{
+            background: $primary_color;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+            padding: 7px 12px;
+            &:hover{
+                color: $second_color;
+                background: #1C383E;
+            }
+        }
+        .product__list{
+            float: left;
+            background: $second_color;
+            width: 60%;
+            border-radius: 10px;
+            margin-right: 52px;
+            padding-bottom: 21px;
+            .product--title{
+                padding: 20px;
+                margin-bottom: 21px;
+                background: #FFF;
+                border-radius: 20px 20px 0 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .product--content{
+                text-align: left;
+                margin: auto;
+                width: 90%;
+                th{
+                    font-weight: bold;
+                    font-size: 12px;
+                    width: 120px;
+                    font-size: 10px;
+                    padding: 12px 5px;
+                    
+                }
+                td{
+                    font-size: 10px;
+                    padding: 12px 5px;
+                }
+                .yellow-bg{
+                    background: #FDF9E5;
+                }
+            }
+        }
+        .run__chart{
+            float: left;
+            background: $second_color;
+            width: 35%;
+            border-radius: 10px;
+            padding-bottom: 21px;
+             ///到時候放爬來的資料可能會調整寬度
+            img{
+                width: 80%;
+                height: 60%;
+                display: block;
+                margin: 0 auto;
+            }
+            .chart--title{
+                padding: 20px;
+                margin-bottom: 21px;
+                background: #FFF;
+                border-radius: 20px 20px 0 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .news{
+            float: left;
+            background: $second_color;
+            width: 60%;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-right: 52px;
+            padding-bottom: 21px;
+            .news--title{
+                padding: 20px;
+                margin-bottom: 21px;
+                background: #FFF;
+                border-radius: 20px 20px 0 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .news--content{
+                li{
+                    a{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 26px;
+                        border-bottom: #E3E2DD 1px solid;
+                        img{
+                            width: 20%;
+                            margin-right: 21px;
+                        }
+                        h3{
+                            color: #226F7D;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 1.5;
+                            color: $text_color;
+                        }
+                    }
+                }
+            }
+        }
+        .discussing__board{
+            float: left;
+            background: $second_color;
+            width: 35%;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding-bottom: 21px;
+            .discussing--title{
+                padding: 20px;
+                margin-bottom: 21px;
+                background: #FFF;
+                border-radius: 20px 20px 0 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .discussing--content{
+                li{
+                    a{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 26px;
+                        padding-bottom: 55px;
+                        border-bottom: #E3E2DD 1px solid;
+                        .Avatars{
+                            position: relative;
+                            width: 20%; /* 固定寬度 */
+                            margin-right: 22px;
+                            &::after {
+                                content: "";
+                                display: block;
+                                padding-bottom: 100%; /*padding取決於寬度，這裡設定padding-bottom: 100%就可以得到正方形*/
+                            }
+                            img{
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0; /*將圖片大小固定為父類div的大小*/
+                                width: 100%; 
+                                height: 100%;
+                                object-fit: cover; /* 相當於 background-size: cover; of a background-image */
+                                object-position: center;
+                            }
+                        }
+                        h3{
+                            color: #226F7D;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 1.5;
+                            color: $text_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.robot{
+    position: fixed;
+    bottom: 10px;
+    right: 1%;
+    z-index: 99;
+    text-decoration: none;
+    background-image: url(../images/robot3.jpg);
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    box-shadow:  0.1em 0.1em 0.2em rgb(56, 56, 56);
+    transition: 0.5s;
+    &:hover{
+        background-color: rgba(112, 112, 112, 0.4);
+        // 設置背景混和模式為相乘模式
+        background-blend-mode: multiply;
+    }
+    
+    &::before{
+        width: 80%;
+        position: relative;
+        display: block;
+        content: " 搶先體驗!!";
+        color: rgb(214, 44, 44);
+        text-shadow: 0.1em 0.1em 0.2em rgb(182, 181, 181);;
+        font-size: 22px;
+        font-weight: bold;
+        right: 60%;
+        bottom: 35%;
+        transform: rotate(-30deg);
+    }
+}

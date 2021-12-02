@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 1536px;
+  margin: 0 auto;
+  background: #EFEFEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #4F4E4B;
+  z-index: 10;
+}
+
+.wrap a {
+  text-decoration: none;
+}
+
+.side {
+  position: fixed;
+  width: 17%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 62, 67, 0.72)), to(#041B1F));
+  background: linear-gradient(180deg, rgba(37, 62, 67, 0.72) 0%, #041B1F 100%);
+  height: 800px;
+}
+
+.side h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 17px;
+  padding-left: 38px;
+  padding-bottom: 54px;
+  color: #FAFAFA;
+}
+
+.side h1 .bright {
+  color: #FFDD00;
+}
+
+.side .menu li {
+  margin-left: 36px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.side .menu li a {
+  color: #FAFAFA;
+  font-size: 18px;
+  display: block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.side .menu li a:hover {
+  background: #FFDD00;
+  border-radius: 30px;
+}
+
+.side .menu li a i {
+  margin-right: 28px;
+}
+
+.container {
+  width: 83%;
+  background: url(../images/001.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 20px 0;
+  padding-right: 51px;
+  padding-left: 61px;
+  margin-left: 17%;
+}
+
+.container .header--button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.container .header--button .header__login--button, .container .header--button .header__register--button {
+  font-size: 14px;
+  background: #FAFAFA;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  padding: 6px 13px;
+  margin-right: 12px;
+  text-align: center;
+}
+
+.container .header--button .header__login--button:hover, .container .header--button .header__register--button:hover {
+  color: #FAFAFA;
+  background: #1C383E;
+}
+
+.container .content {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.container .content .more {
+  background: #FFDD00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 7px 12px;
+}
+
+.container .content .more:hover {
+  color: #FAFAFA;
+  background: #1C383E;
+}
+
+.container .content .product__list {
+  float: left;
+  background: #FAFAFA;
+  width: 60%;
+  border-radius: 10px;
+  margin-right: 52px;
+  padding-bottom: 21px;
+}
+
+.container .content .product__list .product--title {
+  padding: 20px;
+  margin-bottom: 21px;
+  background: #FFF;
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .product__list .product--title i {
+  margin-right: 10px;
+}
+
+.container .content .product__list .product--content {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.container .content .product__list .product--content th {
+  font-weight: bold;
+  font-size: 12px;
+  width: 120px;
+  font-size: 10px;
+  padding: 12px 5px;
+}
+
+.container .content .product__list .product--content td {
+  font-size: 10px;
+  padding: 12px 5px;
+}
+
+.container .content .product__list .product--content .yellow-bg {
+  background: #FDF9E5;
+}
+
+.container .content .run__chart {
+  float: left;
+  background: #FAFAFA;
+  width: 35%;
+  border-radius: 10px;
+  padding-bottom: 21px;
+}
+
+.container .content .run__chart img {
+  width: 80%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.container .content .run__chart .chart--title {
+  padding: 20px;
+  margin-bottom: 21px;
+  background: #FFF;
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .run__chart .chart--title i {
+  margin-right: 10px;
+}
+
+.container .content .news {
+  float: left;
+  background: #FAFAFA;
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-right: 52px;
+  padding-bottom: 21px;
+}
+
+.container .content .news .news--title {
+  padding: 20px;
+  margin-bottom: 21px;
+  background: #FFF;
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .news .news--title i {
+  margin-right: 10px;
+}
+
+.container .content .news .news--content li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px;
+  border-bottom: #E3E2DD 1px solid;
+}
+
+.container .content .news .news--content li a img {
+  width: 20%;
+  margin-right: 21px;
+}
+
+.container .content .news .news--content li a h3 {
+  color: #226F7D;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.container .content .news .news--content li a p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4F4E4B;
+}
+
+.container .content .discussing__board {
+  float: left;
+  background: #FAFAFA;
+  width: 35%;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-bottom: 21px;
+}
+
+.container .content .discussing__board .discussing--title {
+  padding: 20px;
+  margin-bottom: 21px;
+  background: #FFF;
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .discussing__board .discussing--title i {
+  margin-right: 10px;
+}
+
+.container .content .discussing__board .discussing--content li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px;
+  padding-bottom: 55px;
+  border-bottom: #E3E2DD 1px solid;
+}
+
+.container .content .discussing__board .discussing--content li a .Avatars {
+  position: relative;
+  width: 20%;
+  /* 固定寬度 */
+  margin-right: 22px;
+}
+
+.container .content .discussing__board .discussing--content li a .Avatars::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  /*padding取決於寬度，這裡設定padding-bottom: 100%就可以得到正方形*/
+}
+
+.container .content .discussing__board .discussing--content li a .Avatars img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*將圖片大小固定為父類div的大小*/
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* 相當於 background-size: cover; of a background-image */
+  -o-object-position: center;
+     object-position: center;
+}
+
+.container .content .discussing__board .discussing--content li a h3 {
+  color: #226F7D;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.container .content .discussing__board .discussing--content li a p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4F4E4B;
+}
+
+.robot {
+  position: fixed;
+  bottom: 10px;
+  right: 1%;
+  z-index: 99;
+  text-decoration: none;
+  background-image: url(../images/robot3.jpg);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: 0.1em 0.1em 0.2em #383838;
+          box-shadow: 0.1em 0.1em 0.2em #383838;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.robot:hover {
+  background-color: rgba(112, 112, 112, 0.4);
+  background-blend-mode: multiply;
+}
+
+.robot::before {
+  width: 80%;
+  position: relative;
+  display: block;
+  content: " 搶先體驗!!";
+  color: #d62c2c;
+  text-shadow: 0.1em 0.1em 0.2em #b6b5b5;
+  font-size: 22px;
+  font-weight: bold;
+  right: 60%;
+  bottom: 35%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+/*# sourceMappingURL=all.css.map */
