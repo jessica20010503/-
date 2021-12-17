@@ -52,6 +52,9 @@ $text_color:#4F4E4B;
 .mb-1{
     margin-bottom: 5px;
 }
+.mr-1{
+    margin-right: 5px;
+}
 .m-2{
     margin: 10px;
 }
@@ -229,6 +232,9 @@ $text_color:#4F4E4B;
 .pb-5{
     padding-bottom: 25px;
 }
+.pt-5{
+    padding-top: 25px;
+}
 .p-6{
     padding: 30px;
 }
@@ -237,6 +243,9 @@ $text_color:#4F4E4B;
 }
 .pb-6{
     padding-bottom: 30px;
+}
+.pt-6{
+    padding-top: 30px;
 }
 .pt-8{
     padding-top: 40px;
@@ -371,6 +380,9 @@ $text_color:#4F4E4B;
 .gray-bg{
     background: #EFEFEF;
 }
+.middle-gray-bg{
+    background: #d8d8d6;
+}
 .dark-gray{
     color: #4F4E4B;
 }
@@ -410,6 +422,9 @@ $text_color:#4F4E4B;
 .dark-red-bg{
     background: rgb(192, 19, 19);
 }
+.dark-blue-bg{
+    background: #1c383e;
+}
 
 //border-radius
 .br-s{
@@ -429,6 +444,9 @@ $text_color:#4F4E4B;
 .b-n{
     border: none;
 }
+.b-bottom{
+    border-bottom: 1px solid #E3E2DD;
+}
 //float
 .fr{
     float: right;
@@ -441,11 +459,18 @@ $text_color:#4F4E4B;
 .clearfix{
     clear: both;
 }
-/*
+
 //shadow
 .text-shadow{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
+.box-shadow{
+    box-shadow: 1px 1px 2px rgba(31, 30, 30, 0.20);
+}
+.card-shadow{
+    box-shadow: 1px 3px 8px rgba(73, 73, 73, 0.1);
+}
+/*
 .drop-shadow{
     filter: drop-shadow(1px 3px 8px rgba(73, 73, 73, 0.2));
 }
@@ -471,6 +496,16 @@ $text_color:#4F4E4B;
     position: absolute;
 }
 
+//pagination
+.pagination li{
+    a{
+        color: $text_color;
+        padding: 5px 7px;
+        &:hover{
+            background: #f3f2f2;
+        }
+    }
+}
 
 // hide-text
 @mixin hide-text {
@@ -485,3 +520,4 @@ $text_color:#4F4E4B;
     background-repeat: no-repeat;
     background-size: cover;
 }
+

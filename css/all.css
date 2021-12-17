@@ -113,6 +113,10 @@ table {
   margin-bottom: 5px;
 }
 
+.mr-1 {
+  margin-right: 5px;
+}
+
 .m-2 {
   margin: 10px;
 }
@@ -345,6 +349,10 @@ table {
   padding-bottom: 25px;
 }
 
+.pt-5 {
+  padding-top: 25px;
+}
+
 .p-6 {
   padding: 30px;
 }
@@ -355,6 +363,10 @@ table {
 
 .pb-6 {
   padding-bottom: 30px;
+}
+
+.pt-6 {
+  padding-top: 30px;
 }
 
 .pt-8 {
@@ -530,6 +542,10 @@ table {
   background: #EFEFEF;
 }
 
+.middle-gray-bg {
+  background: #d8d8d6;
+}
+
 .dark-gray {
   color: #4F4E4B;
 }
@@ -582,6 +598,10 @@ table {
   background: #c01313;
 }
 
+.dark-blue-bg {
+  background: #1c383e;
+}
+
 .br-s {
   border-radius: 5px;
 }
@@ -602,6 +622,10 @@ table {
   border: none;
 }
 
+.b-bottom {
+  border-bottom: 1px solid #E3E2DD;
+}
+
 .fr {
   float: right;
 }
@@ -614,11 +638,21 @@ table {
   clear: both;
 }
 
-/*
-//shadow
-.text-shadow{
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
+
+.box-shadow {
+  -webkit-box-shadow: 1px 1px 2px rgba(31, 30, 30, 0.2);
+          box-shadow: 1px 1px 2px rgba(31, 30, 30, 0.2);
+}
+
+.card-shadow {
+  -webkit-box-shadow: 1px 3px 8px rgba(73, 73, 73, 0.1);
+          box-shadow: 1px 3px 8px rgba(73, 73, 73, 0.1);
+}
+
+/*
 .drop-shadow{
     filter: drop-shadow(1px 3px 8px rgba(73, 73, 73, 0.2));
 }
@@ -640,6 +674,15 @@ table {
 
 .p-absolute {
   position: absolute;
+}
+
+.pagination li a {
+  color: #4F4E4B;
+  padding: 5px 7px;
+}
+
+.pagination li a:hover {
+  background: #f3f2f2;
 }
 
 .modal {
@@ -1830,6 +1873,34 @@ img {
 }
 
 .personal--page__content .trade--table .trade--table__item:hover {
+  background: #f8f190;
+}
+
+.personal--transactionRecord__content .search_input {
+  border-radius: 20px 0 0 20px;
+  border: #FFDD00 2px solid;
+}
+
+.personal--transactionRecord__content .search_btn {
+  background: #FFDD00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 20px 20px 0;
+  font-size: 16px;
+}
+
+.personal--transactionRecord__content .search_btn:hover {
+  color: #FAFAFA;
+  background: #1C383E;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.personal--transactionRecord__content .trade--table th, .personal--transactionRecord__content .trade--table td {
+  padding: 15px 10px;
+}
+
+.personal--transactionRecord__content .trade--table .trade--table__item:hover {
   background: #f8f190;
 }
 /*# sourceMappingURL=all.css.map */
