@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Warbler</title>
 
-    <link rel="shortcut icon" href="img/robot.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/robot.jpg" type="image/x-icon">
     <meta name='description' content="Future Warbler" />
     <meta name="keywords" content="期貨, 期貨模擬交易, 智能機器人, Future Warbler">
     <meta property="og:title" content="Future Warbler" />
     <meta property="og:description" content="期貨模擬交易平台">
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="FB上的網址" />
-    <meta property="og:image" content="img/robot.jpg"/>
-
+    <meta property="og:image" content="../img/robot.jpg"/>
     <link rel="stylesheet" href="../css/all.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/all.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
@@ -23,13 +24,21 @@
         <div class="side">
             <h1 class="fz-xl fwb">F<span class="bright">u</span>ture <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
             <ul class="menu">
-                <li><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
-                <li><a href=""><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
-                <li><a href="class.html"><i class="fas fa-chalkboard-teacher mr-4"></i>期貨小教室</a></li>
-                <li><a href=""><i class="fas fa-robot mr-4"></i>智能機器人顧問</a></li>
-                <li><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
-                <li><a href="forum.html"><i class="fas fa-comment-alt mr-4"></i>討論版</a></li>
-                <li><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
+                <li class="chosed main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="trade.html"><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
+                <li class="drop--menu">
+                    <a href="" class="main--menu  pt-2 pb-2 pl-9 mb-3">
+                        <i class="fas fa-chalkboard-teacher mr-4"></i>期貨小教室<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    </a>
+                    <ul class=" d-none">
+                        <li class="sub--menu"><a href="class.html">期貨基本知識</a></li>
+                        <li class="sub--menu"><a href="">期貨基本指標</a></li>
+                    </ul>
+                </li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href=""><i class="fas fa-robot mr-4"></i>智能機器人顧問</a></li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="forum.html"><i class="fas fa-comment-alt mr-4"></i>討論版</a></li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
             </ul>
         </div>
         <div class="container">
@@ -38,46 +47,56 @@
                 <li><a href="register.html" class="header__register--button dark-gray  mr-2 tac br-s">註冊</a></li>
             </ul>
             <ul class="index_content mt-7 w-100">
-                <li class="fl second-white-bg w-60 br-m mr-4pct pb-5">
-                    <div class="product--title white-bg p-4 mb-4 d-flex jcsb aic">
+                <li class="fl second-white-bg w-60 br-m mr-3pct card-shadow pt-4 pb-6 pl-8 pr-8">
+                    <div class="d-flex jcsb aic">
                         <h2><i class="fas fa-list mr-2"></i>商品行情表</h2>
                         <a class="more dark-gray" href="">more...</a>
                     </div>
-                    <table class="product--content m0-a tal w-90 fz-xs">
-                        <tr>
-                            <th class="fwb">期貨</th>
-                            <th class="fwb">月</th>
-                            <th class="fwb">漲跌</th>
-                            <th class="fwb">漲跌幅</th>
-                            <th class="fwb">時間</th>
+                    <table class="w-100 tac trade--table mb-4 ">
+                        <tr class="fwb">
+                            <th>序號</th>
+                            <th>商品代號</th>
+                            <th>商品名稱</th>
+                            <th>月</th>
+                            <th>漲跌</th>
+                            <th>漲跌幅</th>
+                            <th>時間</th>
                         </tr>
-                        <tr class="yellow-bg">
+                        <tr class="trade--table__item">
+                            <td>1</td>
+                            <td>FITX</td>
                             <td>台指期</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
+                            <td>3月</td>
+                            <td>+3.12</td>
+                            <td>+6.12</td>
+                            <td>2021/12/18 18:12</td>
                         </tr>
-                        <tr>
-                            <td>小道瓊</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
+                        <tr class="trade--table__item">
+                            <td>2</td>
+                            <td>FITX</td>
+                            <td>台指期</td>
+                            <td>3月</td>
+                            <td>+3.12</td>
+                            <td>+6.12</td>
+                            <td>2021/12/18 18:12</td>
                         </tr>
-                        <tr class="yellow-bg">
-                            <td>小那斯達克</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
+                        <tr class="trade--table__item">
+                            <td>3</td>
+                            <td>FITX</td>
+                            <td>台指期</td>
+                            <td>3月</td>
+                            <td>+3.12</td>
+                            <td>+6.12</td>
+                            <td>2021/12/18 18:12</td>
                         </tr>
-                        <tr>
-                            <td>小S&P</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
+                        <tr class="trade--table__item">
+                            <td>4</td>
+                            <td>FITX</td>
+                            <td>台指期</td>
+                            <td>3月</td>
+                            <td>+3.12</td>
+                            <td>+6.12</td>
+                            <td>2021/12/18 18:12</td>
                         </tr>
                     </table>
                 </li>

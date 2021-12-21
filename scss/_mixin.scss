@@ -9,9 +9,11 @@ $text_color:#4F4E4B;
 .w-21{
     width: 21%;
 }
-
 .w-30{
     width: 30%;
+}
+.w-33{
+    width: 33%;
 }
 .w-35{
     width: 35%;
@@ -86,6 +88,9 @@ $text_color:#4F4E4B;
 .mr-3{
     margin-right: 15px;
 }
+.ml-3{
+    margin-left: 15px;
+}
 .mt-4{
     margin-top: 20px;
 }
@@ -115,6 +120,9 @@ $text_color:#4F4E4B;
 }
 .mb-6{
     margin-bottom: 30px;
+}
+.ml-6{
+    margin-left: 30px;
 }
 .mt-7{
     margin-top: 35px;
@@ -262,6 +270,9 @@ $text_color:#4F4E4B;
 }
 .pr-8{
     padding-right: 40px;
+}
+.pl-9{
+    padding-left: 45px;
 }
 .pt-10{
     padding-top: 50px;
@@ -453,6 +464,9 @@ $text_color:#4F4E4B;
 }
 .b-bottom{
     border-bottom: 1px solid #E3E2DD;
+}
+.b-top{
+    border-top: 1px solid #E3E2DD;
 }
 .b{
     border: 1px solid #E3E2DD;
