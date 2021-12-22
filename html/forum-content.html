@@ -15,8 +15,16 @@
     <meta property="og:url" content="FB上的網址" />
     <meta property="og:image" content="images/robot.jpg"/>
 
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="../scss/all.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script>
+        function copyFn() {
+            var val = document.getElementById('copyMy');
+            window.getSelection().selectAllChildren(val);
+            document.execCommand("Copy");
+            alert("已成功複製！");
+        }
+    </script>
 </head>
 <body>
     <div class="wrap d-flex m0-a">
@@ -59,15 +67,22 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste praesentium perspiciatis fugiat illum exercitationem! Officia inventore vitae quaerat temporibus, odit, eum eos voluptatum nemo consectetur voluptatem iste veritatis veniam necessitatibus.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ullam magnam pariatur reprehenderit veniam quibusdam dolorum? Non, unde? Laborum cupiditate quia aspernatur laboriosam unde necessitatibus suscipit possimus, nesciunt expedita commodi?</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ea voluptate animi itaque laudantium, officia possimus consequatur ducimus porro eius corrupti ad, dolor incidunt! Laudantium suscipit nostrum eveniet dicta natus?</p>
+                <div>
+                </div>
                 <div class="code mt-4 p-5">
                     <h2 class="mb-2 fz-m fwb">程式範例：</h2>
-                    <p class="white-bg p-4">
+                    <p class="white-bg p-4" id="copyMy">
+                       lorem .....<br>
+                       lorem .....<br>
+                       lorem .....<br>
+                       lorem .....<br>
+                       lorem .....<br>
                        lorem .....<br>
                        lorem .....<br>
                        lorem .....<br>
                        lorem .....<br>
                     </p>
-                    <a href="#" class="d-inline-block p-2 fz-s mt-3">下載檔案</a>
+                    <a class="d-inline-block p-3 fz-s mt-3" onClick="copyFn()">點擊複製</a>
                 </div>
                 <ul class="prise mt-4 d-flex">
                     <li class="mr-3"><a href="#"><i class="fas fa-comment-alt mr-2" style="font-size: 20px;"></i></a>留言數 5</li>

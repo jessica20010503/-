@@ -32,6 +32,7 @@
             height: 400px;
         }
     }
+    
     .content-right{
         width: 35%;
         >h3{
@@ -39,7 +40,7 @@
             border-radius: 10px 10px 0 0;
         }
         li{
-            border-bottom: 2px dotted gray;
+            border-bottom: 1px solid gray;
             &:last-child{
                 border-radius: 0 0 10px 10px;
                 border-bottom: transparent;

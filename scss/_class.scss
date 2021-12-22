@@ -27,7 +27,6 @@
         float: right;
     }
     .main{
-        margin: 20px 0 0;
         flex-wrap: wrap;
         >li{
             width: 330px;
@@ -36,11 +35,7 @@
         .tag{
             flex-wrap: wrap;
             a{
-                margin-right: 10px;
-                background-color: #D9C76C;
-                color: $text_color;
                 transition: 0.5s all;
-                border-radius: 10px;
                 &:hover{
                     background-color: $text_color;
                     color: $primary_color;
@@ -55,25 +50,31 @@
                 color: $primary_color;
             }
         }
+        .go-class__btn{
+            background: $primary_color;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+            padding: 10px 12px;
+            font-size: 16px;
+            &:hover{
+                color: $second_color;
+                background: #1C383E;
+               transition: 0.1s;
+            }
+        }
         img{
-            max-width: 330px;
             height: 200px;
-            border-radius: 20px 20px 0px 0px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .class-card{
+            &:hover{
+                background: #e9e9e9;
+            }
         }
     }
     .content{
-        border-radius: 0px 0px 20px 20px;
-        height: 300px;
-        p{
-            height: 100px;
-        }
+        height: 210px;
     }
-    .pagination a{  
-        color: $text_color;
-        transition: 0.3s all;
-        &:hover{
-            color: #D9C76C;
-        }
-        
-    }
+    
 }

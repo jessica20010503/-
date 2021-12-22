@@ -45,25 +45,33 @@
         }
     }
     .content-left{
-        width: 60%;
+        width: 58%;
         >h3{
             background-color: #ebcf46;
             border-radius: 10px 10px 0 0;
+        }
+        li{
+            border-bottom: 1px solid darkgray;
+            &:last-child{
+                border-bottom: none;
+            }
         }
     }
     .content-right{
-        width: 35%;
+        width: 40%;
         >h3{
             background-color: #ebcf46;
             border-radius: 10px 10px 0 0;
         }
-        li:last-child{
-            border-radius: 0 0 10px 10px;
+        li{
+            border-bottom: 1px solid darkgray;
+            &:last-child{
+                border-bottom: none;
+                border-radius: 0 0 10px 10px;
+            }
         }
     }
-    .border-bottom{
-        border-bottom: 1px solid darkgray;
-    }
+    
     .pagination a{  
         color: $text_color;
         transition: 0.3s all;

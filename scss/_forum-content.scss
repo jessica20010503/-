@@ -36,6 +36,8 @@
         border-radius: 10px;
         p{
             border-radius: 5px;
+            height: 200px;
+            overflow-y: auto;
         }
         a{
             color: $text_color;
@@ -46,6 +48,7 @@
                 color: #ebcf46;
                 background-color: $text_color;
             }
+            cursor: pointer;
         }
     }
     .prise{
