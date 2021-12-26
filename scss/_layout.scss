@@ -127,8 +127,8 @@ img{
 .loginned_photo{
     position: relative;
     border-radius: 50%;
-    width: 40px;
-    height: 40px; /* 固定寬度 */
+    width: 35px;
+    height: 35px; /* 固定寬度 */
     &::after {
         content: "";
         display: block;
