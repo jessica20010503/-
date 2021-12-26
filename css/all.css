@@ -1542,102 +1542,59 @@ img {
   text-decoration: underline;
 }
 
-.forum .topnav {
-  background: #BFB595;
-  border-radius: 10px;
-}
-
-.forum .topnav a {
-  color: #4F4E4B;
-}
-
-.forum .topnav a:hover {
-  background-color: #4F4E4B;
-  color: #ebcf46;
-  border-radius: 10px;
-}
-
-.forum .topnav input {
-  font-size: 16px;
-  width: 100%;
-  border-radius: 5px 0 0 5px;
-  border-style: unset;
-}
-
-.forum .topnav button {
-  border-style: unset;
-  border-radius: 0 5px 5px 0;
-}
-
-.forum .topnav button:hover {
-  background-color: #ebcf46;
-}
-
-.forum .forum-main {
-  border-radius: 10px;
-}
-
-.forum .forum-main img {
+.forum img {
   width: 100px;
   height: 100px;
 }
 
-.forum .forum-main .icon i {
-  color: #4F4E4B;
+.forum .content-left li a:hover, .forum .content-right li a:hover {
+  background: #f3f2f2;
 }
 
-.forum .forum-main .icon i:hover {
-  color: #BFB595;
+.forum .content-left li a:hover h3, .forum .content-right li a:hover h3 {
+  color: rgba(9, 44, 81, 0.88);
+  text-decoration: underline;
 }
 
-.forum .content h3 {
-  font-size: 16px;
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+.forum .Avatars {
+  position: relative;
+  width: 20%;
+  /* 固定寬度 */
+  margin-right: 22px;
 }
 
-.forum .content h3:hover {
-  color: #BFB595;
+.forum .Avatars::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  /*padding取決於寬度，這裡設定padding-bottom: 100%就可以得到正方形*/
 }
 
-.forum .content p {
-  font-size: 14px;
-}
-
-.forum .border-bottom {
-  border-bottom: 1px solid darkgray;
-}
-
-.forum .pagination a {
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.forum .pagination a:hover {
-  color: #ebcf46;
+.forum .Avatars img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*將圖片大小固定為父類div的大小*/
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* 相當於 background-size: cover; of a background-image */
+  -o-object-position: center;
+     object-position: center;
 }
 
 .forum .write {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  bottom: 15px;
+  right: 60px;
 }
 
 .forum .write img {
-  width: 50px;
-  height: 50px;
-}
-
-.forum-content .topnav {
-  background: #4599d5;
-}
-
-.forum-content .topnav a:hover {
-  background-color: #4F4E4B;
-  color: #ebcf46;
-  border-radius: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 .forum-content .article {
@@ -1656,19 +1613,21 @@ img {
 
 .forum-content .code p {
   border-radius: 5px;
+  height: 200px;
+  overflow-y: auto;
 }
 
 .forum-content .code a {
-  color: #4F4E4B;
-  background-color: #ebcf46;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  border-radius: 10px;
+  background: #FFDD00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 7px 12px;
 }
 
 .forum-content .code a:hover {
-  color: #ebcf46;
-  background-color: #4F4E4B;
+  color: #FAFAFA;
+  background: #1C383E;
 }
 
 .forum-content .prise a {
@@ -1679,20 +1638,7 @@ img {
 }
 
 .forum-content .prise a:hover {
-  color: #BFB595;
-}
-
-.forum-content .filter a {
-  color: #4F4E4B;
-  background-color: #ebcf46;
-  border-radius: 10px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.forum-content .filter a:hover {
-  color: #ebcf46;
-  background-color: #4F4E4B;
+  color: red;
 }
 
 .forum-content .border-bottom {
@@ -1717,14 +1663,18 @@ img {
 }
 
 .forum-content .leave-message button {
-  width: 10%;
+  width: 15%;
   border-style: none;
+  background: #FFDD00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 0 5px 5px 0;
-  border: 1px solid lightgray;
+  padding: 7px 12px;
 }
 
 .forum-content .leave-message button:hover {
-  background-color: #ebcf46;
+  color: #FAFAFA;
+  background: #1C383E;
 }
 
 .forum-content .discussing--content li:hover {
@@ -1761,9 +1711,8 @@ img {
      object-position: center;
 }
 
-.forum-write .topnav {
-  background: #BFB595;
-  border-radius: 10px 10px 0 0;
+.forum-write {
+  margin: 20px auto;
 }
 
 .forum-write h2, .forum-write .forum-write-main {
@@ -1792,15 +1741,17 @@ img {
 }
 
 .forum-write form .submit {
-  color: #4F4E4B;
-  background-color: #ebcf46;
-  border-style: none;
-  border-radius: 10px;
+  background: #FFDD00;
+  border: none;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 10px 12px;
 }
 
 .forum-write form .submit:hover {
-  background-color: #4F4E4B;
-  color: #ebcf46;
+  color: #FAFAFA;
+  background: #1C383E;
 }
 
 .personal--page__content .personal--information__content .Avatars {
@@ -1994,5 +1945,83 @@ img {
   background: #1C383E;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.robot-normal table td {
+  padding: 15px 10px;
+}
+
+.robot-normal .product-table {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.robot-normal .time-table, .robot-normal .index-table {
+  height: 300px;
+}
+
+.robot-normal .robot__btn {
+  background: #FFDD00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+
+.robot-normal .robot__btn:hover {
+  color: #FAFAFA;
+  background: #1C383E;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.robot-normal .trade--table__item:hover {
+  background: #faf6bd;
+}
+
+.robot-intelligent table th {
+  padding: 15px 10px;
+}
+
+.robot-intelligent table td {
+  padding: 10px;
+}
+
+.robot-intelligent .conclusion-table tr {
+  border-bottom: 1px solid darkgray;
+}
+
+.robot-intelligent .product-table {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.robot-intelligent .time-table, .robot-intelligent .index-table {
+  height: 300px;
+}
+
+.robot-intelligent .robot__btn {
+  background: #FFDD00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+
+.robot-intelligent .robot__btn:hover {
+  color: #FAFAFA;
+  background: #1C383E;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.robot-intelligent .trade--table__item:hover {
+  background: #faf6bd;
+}
+
+.robot-intelligent .border-bottom {
+  border-bottom: 1px solid darkgray;
 }
 /*# sourceMappingURL=all.css.map */
