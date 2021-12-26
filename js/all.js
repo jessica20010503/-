@@ -20,8 +20,21 @@ $(document).ready(function () {
 	  $('.font-b').click(function (e) { 
 		$('.news-content .article p').css('font-size','20px');
 	  });	
-	});
 	
+	
+	  $('.font-s').click(function (e) { 
+		$('.class__content .article p').css('font-size','14px');
+	  });
+	
+	  $('.font-m').click(function (e) { 
+		$('.class__content .article p').css('font-size','18px');
+	  });
+	
+	  $('.font-b').click(function (e) { 
+		$('.class__content .article p').css('font-size','20px');
+	  });	
+	});
+
 	$(function () {
 		$(".drop--menu>li>a").click(function (e) {
 			e.preventDefault();
@@ -29,7 +42,6 @@ $(document).ready(function () {
 			$(this).parent().find('.menu--drop').slideToggle();
 			$(this).parent().siblings().find('.menu--drop').slideUp();
 	});
-	
 });
 
  
