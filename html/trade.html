@@ -61,7 +61,7 @@
                         <h2><i class="fas fa-list mr-3"></i>商品列表</h2>           
                     </div>
                     <div class="d-flex">
-                        <div class="trade--productList pb-4 p-2 h-40 w-60">
+                        <div class="trade--productList pb-4 p-2 h-40 w-90">
                             <table class="w-100 tac trade--table mb-4 ">
                                 <tr class="fwb">
                                     <th>序號</th>
@@ -184,31 +184,76 @@
                             
                         </div>
                         <div class="w-40 p-2 pl-5">
-                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-block" id="product">
-                                <option value="" class="p-2" >商品</option>
-                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
-                            </select>
-                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-block" id="product">
-                                <option value="" class="p-2" >時間週期</option>
-                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
-                            </select>
-                            <select class="trade--option p-1 w-25 mt-2 mr-2  br-s p-2 d-inline-bloc" id="product">
-                                <option value="" class="p-2" >開始時間</option>
-                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
-                            </select>
-                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-inline-block" id="product">
-                                <option value="" class="p-2" >結束時間</option>
-                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
-                            </select>
-                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-block" id="product">
-                                <option value="" class="p-2" >副圖指標1</option>
-                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
-                            </select>
-                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-block" id="product">
-                                <option value="" class="p-2" >副圖指標2</option>
-                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
-                            </select>
-                            
+                            <div class="d-block">
+                                <label for="product">期貨商品：
+                                    <select name="product" id="product" class="trade--option  w-25 mt-2 p-1 br-s ">
+                                        <option value="">台指期</option>
+                                        <option value="">小台指</option>
+                                        <option value="5hr">電子期</option>
+                                        <option value="1day">金融期</option>
+                                        <option value="1week">小道瓊</option>
+                                        <option value="1month">小那斯達克</option>
+                                        <option value="3month">小S&P</option>
+                                        <option value="3month">小羅素2000</option>
+                                        <option value="3month">美國十年公債</option>
+                                        <option value="3month">黃豆</option>
+                                        <option value="3month">小麥</option>
+                                        <option value="3month">玉米</option>
+                                    </select>
+                            </div>
+                            <div class="d-block">
+                                <label for="cycle">資料周期：
+                                <select name="cycle" id="cycle" class="trade--option  w-25 mt-2 p-1 br-s ">
+                                    <option value="5min">5 分鐘</option>
+                                    <option value="1hr">1 小時</option>
+                                    <option value="5hr">5 小時</option>
+                                    <option value="1day">1 天</option>
+                                    <option value="1week">1 周</option>
+                                    <option value="1month">1 個月</option>
+                                    <option value="3month">3 個月</option>
+                                </select>
+                            </div>
+                            <div class="d-block">
+                                <label for="start-time">開始時間：</label>
+                                <input id="start-time" type="date" class="trade--option  mt-2 p-1 ">
+                                <br>
+                                <label for="end-time">結束時間：</label>
+                                <input id="end-time" type="date" class="trade--option  mt-2 p-1 ">
+                            </div>
+                            <div class="d-block">
+                                <label for="index1">副圖指標1：
+                                <select name="index1" id="index1" class="trade--option  w-25 mt-2 p-1 br-s">
+                                    <option value="">RSI指標</option>
+                                    <option value="">KD指標</option>
+                                    <option value="">BIAS乖離率</option>
+                                    <option value="">MACD指標</option>
+                                    <option value="">布林通道</option>
+                                    <option value="">威廉指標</option>
+                                    <option value="">WVAD指標</option>
+                                    <option value="">MA策略</option>
+                                    <option value="">趨向指標 DMI</option>
+                                    <option value="">威廉指標</option>
+                                    <option value="">EMA(指數平均數指標）</option>
+                                    <option value="">RSV（未成熟隨機值）</option>
+                                </select>
+                            </div>
+                            <div class="d-block">
+                                <label for="index2">副圖指標2：
+                                    <select name="index2" id="index2" class="trade--option  w-25 mt-2 p-1 br-s">
+                                        <option value="">RSI指標</option>
+                                        <option value="">KD指標</option>
+                                        <option value="">BIAS乖離率</option>
+                                        <option value="">MACD指標</option>
+                                        <option value="">布林通道</option>
+                                        <option value="">威廉指標</option>
+                                        <option value="">WVAD指標</option>
+                                        <option value="">MA策略</option>
+                                        <option value="">趨向指標 DMI</option>
+                                        <option value="">威廉指標</option>
+                                        <option value="">EMA(指數平均數指標）</option>
+                                        <option value="">RSV（未成熟隨機值）</option>
+                                    </select>
+                            </div>
                         </div>
                     </div>
                 </li>
