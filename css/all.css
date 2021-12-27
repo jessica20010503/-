@@ -133,6 +133,10 @@ table {
   margin-right: 5px;
 }
 
+.ml-1 {
+  margin-left: 5px;
+}
+
 .m-2 {
   margin: 10px;
 }
@@ -1955,15 +1959,6 @@ img {
   padding: 15px 10px;
 }
 
-.robot-normal .product-table {
-  height: 300px;
-  overflow-y: auto;
-}
-
-.robot-normal .time-table, .robot-normal .index-table {
-  height: 300px;
-}
-
 .robot-normal .robot__btn {
   background: #FFDD00;
   text-align: center;
@@ -1980,10 +1975,6 @@ img {
   transition: 0.1s;
 }
 
-.robot-normal .trade--table__item:hover {
-  background: #faf6bd;
-}
-
 .robot-intelligent table th {
   padding: 15px 10px;
 }
@@ -1992,17 +1983,8 @@ img {
   padding: 10px;
 }
 
-.robot-intelligent .conclusion-table tr {
-  border-bottom: 1px solid darkgray;
-}
-
-.robot-intelligent .product-table {
-  height: 300px;
-  overflow-y: auto;
-}
-
-.robot-intelligent .time-table, .robot-intelligent .index-table {
-  height: 300px;
+.robot-intelligent .conclusin-table th {
+  background-color: #e7e7e7;
 }
 
 .robot-intelligent .robot__btn {
@@ -2019,10 +2001,6 @@ img {
   background: #1C383E;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-}
-
-.robot-intelligent .trade--table__item:hover {
-  background: #faf6bd;
 }
 
 .robot-intelligent .border-bottom {

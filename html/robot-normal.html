@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="FB上的網址" />
     <meta property="og:image" content="../img/robot.jpg"/>
-    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../scss/all.css">
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/all.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -25,11 +25,11 @@
         <div class="side">
             <h1 class="fz-xl fwb">F<span class="bright">u</span>ture <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
             <ul class="menu">
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="trade.html"><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
+                <li class=" main--menu pt-3 pr-5 pb-3 pl-9  "><a href="index.html"><i class="fas fa-home mr-2"></i>首頁</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="trade.html"><i class="fas fa-university mr-2"></i>模擬交易所</a></li>
                 <li class="drop--menu">
-                    <a href="" class="main--menu  pt-3 pb-3 pl-9  ">
-                        <i class="fas fa-chalkboard-teacher mr-4"></i>期貨小教室<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    <a href="" class="main--menu pt-3 pb-3 pl-9  ">
+                        <i class="fas fa-chalkboard-teacher mr-2"></i>期貨小教室<i class="fas fa-chevron-down ml-1 fz-s"></i>
                     </a>
                     <ul class=" d-none">
                         <li class="sub--menu"><a href="class.html">期貨基本知識</a></li>
@@ -37,117 +37,106 @@
                     </ul>
                 </li>
                 <li class="drop--menu">
-                    <a href="" class="main--menu  pt-3 pb-3 pl-9 mb-3 chosed">
-                        <i class="fas fa-chalkboard-teacher mr-4"></i>智能機器人顧問<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    <a href="" class="main--menu pt-3 pb-3 pl-9 chosed">
+                        <i class="fas fa-robot mr-2"></i>智能機器人顧問<i class="fas fa-chevron-down ml-1 fz-s"></i>
                     </a>
                     <ul class=" d-none">
                         <li class="sub--menu"><a href="robot-normal.html">一般交易系統</a></li>
                         <li class="sub--menu"><a href="robot-intelligent.html">智能交易系統</a></li>
                     </ul>
                 </li>
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="forum.html"><i class="fas fa-comment-alt mr-4"></i>討論版</a></li>
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="news.html"><i class="fas fa-newspaper mr-2"></i>新聞</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="forum.html"><i class="fas fa-comment-alt mr-2"></i>討論版</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="personal-page.html"><i class="fas fa-user-alt mr-2"></i>個人頁面</a></li>
             </ul>
         </div>
-        <div class="container">
+        <div class="container pb-4">
             <ul class="header d-flex jcfe card-shadow text-shadow p-3">
                 <li><a href="login.html" class="header__login--button dark-gray  mr-2 tac br-s fwb"><i class="fas fa-sign-in-alt mr-3"></i>登入</a></li>
             </ul>
             <div class="robot-normal mt-7 w-100 pl-12 pr-10 b-4">
-                    <div class="fl second-white-bg w-100 br-m mr-3pct card-shadow pt-6 pb-6 pl-8 pr-8 mb-4">
-                        <h2 class="mb-6"><i class="fas fa-list mr-3"></i>設定計算項目</h2>
-                        <form action="#" class="time-table d-flex jcsb">
-                            <div>
-                                <h2 class="mb-4 fwb primary b-bottom pb-2">商品設定</h2>
-                                <label for="cycle">期貨商品：
-                                <select name="cycle">
-                                    <option value="">台指期</option>
-                                    <option value="">小台指</option>
-                                    <option value="5hr">電子期</option>
-                                    <option value="1day">金融期</option>
-                                    <option value="1week">小道瓊</option>
-                                    <option value="1month">小那斯達克</option>
-                                    <option value="3month">小S&P</option>
-                                    <option value="3month">小羅素2000</option>
-                                    <option value="3month">美國十年公債</option>
-                                    <option value="3month">黃豆</option>
-                                    <option value="3month">小麥</option>
-                                    <option value="3month">玉米</option>
+                <div class="fl white-bg w-100 br-m mr-3pct card-shadow pt-6 pb-6 pl-8 pr-8">
+                    <h2 class="mb-6"><i class="fas fa-list mr-3"></i>設定計算項目</h2>
+                    <form action="#" method="#" class="time-table d-flex jcsb">
+                        <div>
+                            <h2 class="mb-4 fwb primary b-bottom pb-2">商品設定</h2>
+                            <label for="product">期貨商品：
+                            <select name="product" id="product">
+                                <option value="TX">台指期</option>
+                                <option value="MTX">小台指</option>
+                                <option value="TE">電子期</option>
+                                <option value="TF">金融期</option>
+                                <option value="UDF">小道瓊</option>
+                                <option value="NAS">小那斯達克</option>
+                                <option value="S&P">小S&P</option>
+                                <option value="RUT">小羅素2000</option>
+                                <option value="US10">美國十年公債</option>
+                                <option value="S">黃豆</option>
+                                <option value="W">小麥</option>
+                                <option value="C">玉米</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h2 class="mb-4 fwb primary b-bottom pb-2">時間設定</h2>
+                            <label for="cycle">資料周期：
+                                <select name="cycle" class="mb-5">
+                                    <option value="5min">5 分鐘</option>
+                                    <option value="1hr">1 小時</option>
+                                    <option value="5hr">5 小時</option>
+                                    <option value="1day">1 天</option>
+                                    <option value="1week">1 周</option>
+                                    <option value="1month">1 個月</option>
+                                    <option value="3month">3 個月</option>
                                 </select>
-                            </div>
-                            <div>
-                                <h2 class="mb-4 fwb primary b-bottom pb-2">時間設定</h2>
-                                <label for="cycle">資料周期：
-                                    <select name="cycle" class="mb-5">
-                                        <option value="5min">5 分鐘</option>
-                                        <option value="1hr">1 小時</option>
-                                        <option value="5hr">5 小時</option>
-                                        <option value="1day">1 天</option>
-                                        <option value="1week">1 周</option>
-                                        <option value="1month">1 個月</option>
-                                        <option value="3month">3 個月</option>
-                                    </select>
-                                <br>
-                                <label for="start-time">開始時間：</label>
-                                <input id="date" type="date" class="mb-5">
-                                <br>
-                                <label for="end-time">結束時間：</label>
-                                <input id="date" type="date">
-                            </div>
-                            <div>
-                                <h2 class="mb-4 fwb primary b-bottom pb-2">策略設定</h2>
-                                <label for="index">技術指標：
-                                    <select name="cycle" class="mb-2">
-                                        <option value="">RSI指標</option>
-                                        <option value="">KD指標</option>
-                                        <option value="">BIAS乖離率</option>
-                                        <option value="">MACD指標</option>
-                                        <option value="">布林通道</option>
-                                        <option value="">威廉指標</option>
-                                        <option value="">WVAD指標</option>
-                                        <option value="">MA策略</option>
-                                        <option value="">趨向指標 DMI</option>
-                                        <option value="">威廉指標</option>
-                                        <option value="">EMA(指數平均數指標）</option>
-                                        <option value="">RSV（未成熟隨機值）</option>
-                                    </select>
-                                <br>
-                                <label for="index">分析策略：
-                                    <select name="cycle" class="mb-2">
-                                        <option value="">均線策略</option>
-                                        <option value="">布林通道</option>
-                                        <option value="">凱特通道</option>
-                                        <option value="">海龜策略</option>
-                                        <option value="">ORB 策略</option>
-                                    </select>
-                                    <!-- 待確認！ -->
-                                    <br>
-                                    <label for="index" class="mb-2">進場策略：
-                                    <br class="mb-2">
-                                    <label for="index" >出場策略：
-                                    <br class="mb-2">
-                                    <label for="index" > 停損：
-                                    <br class="mb-2">
-                                    <label for="index" > 停利：
-                                    <!-- 待確認！ -->
-                            </div>
-                        </form>
-                    </div>
-                
-                <div class="d-flex jcsb aic second-white-bg w-100 br-m drop-shadow p-6 pl-8 mt-6">
-                    <div class="data d-flex">
-                        <h2 class="fwb">已選擇：</h2>
-                        <p class="mr-5">1	FITX	台指期</p>
-                        <p class="mr-5">5 分鐘</p>
-                        <p class="mr-5">2021/1/1~2021/12/31</p>
-                        <p class="mr-5">RSI指標</p>
-                        <p class="mr-5">均線策略</p>
-                    </div>
+                            <br>
+                            <label for="start-time">開始時間：</label>
+                            <input id="date" type="date" class="mb-5">
+                            <br>
+                            <label for="end-time">結束時間：</label>
+                            <input id="date" type="date">
+                        </div>
+                        <div>
+                            <h2 class="mb-4 fwb primary b-bottom pb-2">策略設定</h2>
+                            <label for="index">技術指標：
+                                <select name="cycle" class="mb-5">
+                                    <option value="">RSI指標</option>
+                                    <option value="">KD指標</option>
+                                    <option value="">BIAS乖離率</option>
+                                    <option value="">MACD指標</option>
+                                    <option value="">布林通道</option>
+                                    <option value="">威廉指標</option>
+                                    <option value="">WVAD指標</option>
+                                    <option value="">MA指標</option>
+                                    <option value="">DMI趨向指標</option>
+                                    <option value="">威廉指標</option>
+                                    <option value="">EMA指數平均數指標</option>
+                                </select>
+                            <br>
+                            <label for="index">分析策略：
+                                <select name="cycle" class="mb-5">
+                                    <option value="">均線策略</option>
+                                    <option value="">布林通道</option>
+                                    <option value="">凱特通道</option>
+                                    <option value="">海龜策略</option>
+                                    <option value="">ORB策略</option>
+                                </select>
+                            <br>
+                                <!-- 待確認！ -->
+                                <!-- <br>
+                                <label for="index" class="mb-">進場策略：
+                                <br class="mb-2">
+                                <label for="index" >出場策略：
+                                <br class="mb-2">
+                                <label for="index" > 停損：
+                                <br class="mb-2">
+                                <label for="index" > 停利： -->
+                                <!-- 待確認！ -->
+                        </div>
+                    </form>
                     <a href="#"  class="d-inline-block fr robot__btn dark-gray b-n fwb">確認送出</a>
                 </div>
                 
-                <div class="second-white-bg w-100 br-m card-shadow mt-6 mr-4pct pt-4 pb-6 pl-8 pr-8">
+                <div class="fl second-white-bg w-100 br-m card-shadow mt-6 mr-4pct pt-6 pb-6 pl-8 pr-8">
                     <div class="d-flex aic jcsb mb-8">
                         <h2><i class="fas fa-chart-line mr-2"></i>分析結果</h2>
                         <a href="#"  class="d-inline-block fr robot__btn dark-gray b-n fwb">保存此次設定</a>
