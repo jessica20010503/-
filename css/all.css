@@ -221,6 +221,10 @@ table {
   margin-top: 35px;
 }
 
+.mt-8 {
+  margin-top: 40px;
+}
+
 .ml-8 {
   margin-left: 40px;
 }
@@ -399,6 +403,10 @@ table {
 
 .pt-8 {
   padding-top: 40px;
+}
+
+.p-8 {
+  padding: 40px;
 }
 
 .pl-8 {
@@ -1208,9 +1216,26 @@ img {
   padding: 12px 5px;
 }
 
-.index .go_classroom--content img {
-  width: 150px;
-  height: 150px;
+.index .go_classroom--content {
+  background: #003a25;
+}
+
+.index .go_classroom--content .go_classroom--btn {
+  background: #FFDD00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.index .go_classroom--content .go_classroom--btn:hover {
+  color: #FAFAFA;
+  background: #1C383E;
+}
+
+.index .go_classroom--content .go_classroom--bottom {
+  background: #cd9d45;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .index .news--content li:hover {
@@ -1869,6 +1894,22 @@ img {
 
 .personal--page__content .trade--table .trade--table__item:hover {
   background: #f3f2f2;
+}
+
+.personal--page__content .unlogin {
+  position: fixed;
+  top: 40%;
+  left: 46%;
+}
+
+.personal--page__content .unlogin-bg {
+  background: rgba(49, 47, 47, 0.753);
+  height: 722px;
+  padding: 100px;
+  position: fixed;
+  left: 15%;
+  top: 0%;
+  z-index: 101;
 }
 
 .personal--transactionRecord__content .trade--table th, .personal--transactionRecord__content .trade--table td {
