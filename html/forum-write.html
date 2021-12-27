@@ -14,7 +14,8 @@
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="FB上的網址" />
     <meta property="og:image" content="images/robot.jpg"/>
-
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/all.js"></script>
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -23,11 +24,11 @@
         <div class="side">
             <h1 class="fz-xl fwb">F<span class="bright">u</span>tures <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
             <ul class="menu">
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="trade.html"><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
+                <li class=" main--menu pt-3 pr-5 pb-3 pl-9  "><a href="index.html"><i class="fas fa-home mr-2"></i>首頁</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="trade.html"><i class="fas fa-university mr-2"></i>模擬交易所</a></li>
                 <li class="drop--menu">
-                    <a href="" class="main--menu  pt-3 pb-3 pl-9  ">
-                        <i class="fas fa-chalkboard-teacher mr-4"></i>期貨小教室<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    <a href="" class="main--menu pt-3 pb-3 pl-9  ">
+                        <i class="fas fa-chalkboard-teacher mr-2"></i>期貨小教室<i class="fas fa-chevron-down ml-1 fz-s"></i>
                     </a>
                     <ul class=" d-none">
                         <li class="sub--menu"><a href="class.html">期貨基本知識</a></li>
@@ -35,17 +36,17 @@
                     </ul>
                 </li>
                 <li class="drop--menu">
-                    <a href="" class="main--menu  pt-3 pb-3 pl-9 mb-3">
-                        <i class="fas fa-chalkboard-teacher mr-4"></i>智能機器人顧問<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    <a href="" class="main--menu pt-3 pb-3 pl-9">
+                        <i class="fas fa-robot mr-2"></i>智能機器人顧問<i class="fas fa-chevron-down ml-1 fz-s"></i>
                     </a>
                     <ul class=" d-none">
                         <li class="sub--menu"><a href="robot-normal.html">一般交易系統</a></li>
                         <li class="sub--menu"><a href="robot-intelligent.html">智能交易系統</a></li>
                     </ul>
                 </li>
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="forum.html"><i class="fas fa-comment-alt mr-4 chosed"></i>討論版</a></li>
-                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="news.html"><i class="fas fa-newspaper mr-2"></i>新聞</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  chosed"><a href="forum.html"><i class="fas fa-comment-alt mr-2"></i>討論版</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="personal-page.html"><i class="fas fa-user-alt mr-2"></i>個人頁面</a></li>
             </ul>
             <div class="circle"></div>
             <div class="circle2"></div>
@@ -63,17 +64,18 @@
                             <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
                             <div class="user-content">
                                 <h4>Emily</h4>
-                                <p class="fz-xs">2021/1/1 1:00</p>
                             </div>
                         </div>
-                        <form action="#">
+                        <form action="#" method="#" class="">
                             <label for="title" class="fz-m d-block mb-2 fwb">文章標題</label>
                             <input type="text" placeholder="標題..." class="article-title mb-6 p-2 d-block fz-s" id="title">
                             <label for="content" for="content" class="fz-m d-block mb-2 fwb">文章內容</label>
                             <textarea name="content" id="content" placeholder="內容..." class="mb-5 p-2 d-block fz-s"></textarea>
                             <label for="file" class="fz-m d-block mb-2 fwb">上傳程式碼</label>
                             <textarea name="content" id="file" placeholder="內容..." class="mb-5 p-2 d-block fz-s"></textarea>
-                            <input type="submit" value="確認送出" class="submit fwb p-3 mb-2 fz-s">
+                            <div class="d-flex jcfe">
+                                <input type="submit" value="確認送出" class="submit fwb p-3 fz-s">
+                            </div>
                         </form>
                     </div>
                 </div>

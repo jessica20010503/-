@@ -2,7 +2,7 @@ $(document).ready(function () {
 	//側邊欄下拉
 	$(".menu>.drop--menu>a").click(function(e){
 		e.preventDefault();
-		$(this).parent().toggleClass("active")
+		$(this).parent().toggleClass("active");
 		$(this).parent().siblings().find('ul').slideUp();
 		$(this).parent().find("ul").slideToggle();
 	});
