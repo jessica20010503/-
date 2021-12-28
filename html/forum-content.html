@@ -20,14 +20,6 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
-    <script>
-        function copyFn() {
-            var val = document.getElementById('copyMy');
-            window.getSelection().selectAllChildren(val);
-            document.execCommand("Copy");
-            alert("已成功複製！");
-        }
-    </script>
 </head>
 <body>
     <div class="wrap d-flex m0-a">
@@ -60,17 +52,18 @@
             </ul>
         </div>
         <div class="container pb-4">
-            <ul class="header d-flex jcfe  text-shadow p-3 card-shadow">
-                <li><a href="#" class="header__login--button dark-gray  mr-2 tac br-s fwb">登入</a></li>
-                <li><a href="#" class="header__register--button dark-gray  mr-2 tac br-s fwb">註冊</a></li>
+            <ul class="header d-flex jcfe card-shadow text-shadow p-3">
+                <li><a href="login.html" class="header__login--button dark-gray  mr-2 tac br-s fwb"><i class="fas fa-sign-in-alt mr-3"></i>登入</a></li>
             </ul>
-            <div class="forum-content">
-                <form action="#" class="d-flex  jcfe fr mt-2 pr-4">
-                    <input type="search" name="record" id="record" placeholder="search here..." class="search_input b-n pt-2 pb-2 pl-4 pr-3  box-shadow">
-                    <button class="search_btn b-n pt-2 pb-2 pl-3 pr-3  box-shadow"><i class="fas fa-search fz-s"></i></button>
-                </form>
+            <div class="forum-content w-100 pl-12 pr-10 b-4">
+                <div class="top d-flex jcfe mt-5 aic">
+                    <form action="#" class="d-flex jcfe">
+                        <input type="search" name="record" id="record" placeholder="search here..." class="search_input b-n pt-2 pb-2 pl-4 pr-3  box-shadow">
+                        <button class="search_btn b-n pt-2 pb-2 pl-3 pr-3  box-shadow"><i class="fas fa-search fz-s"></i></button>
+                    </form>  
+                </div>
                 <div class="clearfix"></div>
-                <div class="w-100 pl-12 pr-10 b-4 mt-6">
+                <div class=" mt-4">
                     <div class="content-left fl white-bg w-60 br-m mr-4pct card-shadow  p-5">
                         <div class="article p-4 white-bg">
                             <div class="user d-flex aic mb-4">
@@ -80,26 +73,18 @@
                                     <p class="fz-xs">22 小時前</p>
                                 </div>
                             </div>
-                            <h3 class="title fz-l fwb mt-2 mb-3">如何突破思考慣性，掌握反敗為勝關鍵？</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste praesentium perspiciatis fugiat illum exercitationem! Officia inventore vitae quaerat temporibus, odit, eum eos voluptatum nemo consectetur voluptatem iste veritatis veniam necessitatibus.</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ullam magnam pariatur reprehenderit veniam quibusdam dolorum? Non, unde? Laborum cupiditate quia aspernatur laboriosam unde necessitatibus suscipit possimus, nesciunt expedita commodi?</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ea voluptate animi itaque laudantium, officia possimus consequatur ducimus porro eius corrupti ad, dolor incidunt! Laudantium suscipit nostrum eveniet dicta natus?</p>
+                            <h3 class="title fz-l fwb mt-2 mb-3">懶得畫圖還想知道交易策略？ 神器TradingCentral來幫您| GKFXPrime</h3>
+                            <p>你或許是一個普通上班族，交易對你而言是業餘生活的投資;你或許是一個剛接觸的新手，面對紛繁複雜的行情，正在抓耳撓腮。 別怕，其實交易就是看準方向，把握多空，然後出手！ 有沒有一款分析軟體，判斷多空呢？GKFXPrime提供的Trading Central助您一臂之力！</p>
                             <div class="code mt-4 p-5">
                                 <div class="d-flex jcsb aic mb-2">
                                     <h2 class="fz-m fwb">程式範例：</h2>
                                     <a href="#" class="d-inline-block p-2 fz-s black"  onClick="copyFn()">一鍵複製</a>
                                 </div>
-                                <p class="white-bg p-4" id="copyMy" class="copyMy">
-                                   lorem .....<br>
-                                   lorem .....<br>
-                                   lorem .....<br>
-                                   lorem .....<br>
-                                   lorem .....<br>
-                                   lorem .....<br>
-                                   lorem .....<br>
-                                   lorem .....<br>
-                                   lorem .....<br>
-                                </p>
+                                <pre class="white-bg p-4" id="copyMy" class="copyMy">
+a=5
+b=6
+print(a+b)
+                                </pre>
                             </div>
                             <div class="prise d-flex jcsb aic mt-4">
                                 <ul class="d-flex">
@@ -124,35 +109,35 @@
                                 <li class="user d-flex border-bottom pt-4 pb-4">
                                     <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
                                     <div class="user-content">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p>謝謝分享！</p>
                                         <p class="fz-xs">Emily｜22 小時前</p>
                                     </div>
                                 </li>
                                 <li class="user d-flex border-bottom pt-4 pb-4">
                                     <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
                                     <div class="user-content">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p>謝謝！這個資訊很重要！</p>
                                         <p class="fz-xs">Emily｜22 小時前</p>
                                     </div>
                                 </li>
                                 <li class="user d-flex border-bottom pt-4 pb-4">
                                     <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
                                     <div class="user-content">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p>感謝～</p>
                                         <p class="fz-xs">Emily｜22 小時前</p>
                                     </div>
                                 </li>
                                 <li class="user d-flex border-bottom pt-4 pb-4">
                                     <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
                                     <div class="user-content">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p>知道了！謝！</p>
                                         <p class="fz-xs">Emily｜22 小時前</p>
                                     </div>
                                 </li>
                                 <li class="user d-flex border-bottom pt-4 pb-4">
                                     <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
                                     <div class="user-content">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p>感謝分享</p>
                                         <p class="fz-xs">Emily｜22 小時前</p>
                                     </div>
                                 </li>
@@ -167,42 +152,42 @@
                            
                         </div>
                     </div>
-                    <div class="content-right fl white-bg w-35 br-m card-shadow pb-4 ">
-                        <h3 class="fz-m fwb ml-4 mr-4 mt-4 mb-4  d-inline-block">熱門貼文</h3>
+                    <div class="content-right fl white-bg w-35 br-m card-shadow pb-4">
+                        <h3 class="fz-m fwb ml-4 mr-4 mt-4 mb-4 d-inline-block">熱門貼文</h3>
                         <ul class="discussing--content">
-                            <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom b-top">
+                            <li><a href="" class="d-flex p-5 pb-11 b-bottom b-top">
                                 <div class="Avatars">
                                     <img src="../img/大頭貼1.jpg" alt="大頭貼1">
                                 </div>
                                 <div class="discussing--text">
-                                    <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    <h3 class="dark-gray fz-s fwb">期貨界公認最強最有效的符咒</h3>
                                     <p class="fz-s dark-gray">-Brian | 2021.11.28 16:20 | <i class="fas fa-comment-alt"></i> 5</p>
                                 </div>
                             </a></li>
-                            <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
+                            <li><a href="" class="d-flex p-5 pb-11 b-bottom">
                                 <div class="Avatars">
                                     <img src="../img/大頭貼2.jpg" alt="大頭貼2">
                                 </div>
                                 <div class="discussing--text">
-                                    <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    <h3 class="dark-gray fz-s fwb">絕世不傳的當沖心法,參悟了便可把期貨當成提款機</h3>
                                     <p class="fz-s dark-gray">-Lora | 2021.11.25 11:30 | <i class="fas fa-comment-alt"></i> 10</p>
                                 </div>
                             </a></li>
-                            <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
+                            <li><a href="" class="d-flex p-5 pb-11 b-bottom">
                                 <div class="Avatars">
                                     <img src="../img/大頭貼3.jpg" alt="大頭貼3">
                                 </div>
                                 <div class="discussing--text">
-                                    <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    <h3 class="dark-gray fz-s fwb">我的當沖1分K劃法</h3>
                                     <p class="fz-s dark-gray">-Alex | 2021.11.20 20:40 | <i class="fas fa-comment-alt"></i> 8</p>
                                 </div>
                             </a></li>
-                            <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
+                            <li><a href="" class="d-flex p-5 pb-11 b-bottom">
                                 <div class="Avatars">
                                     <img src="../img/大頭貼4.jpg" alt="大頭貼4">
                                 </div>
                                 <div class="discussing--text">
-                                    <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    <h3 class="dark-gray fz-s fwb">你是專職的交易員嗎?</h3>
                                     <p class="fz-s dark-gray">-Linda | 2021.11.01 00:05 | <i class="fas fa-comment-alt"></i> 7</p>
                                 </div>
                             </a></li>
