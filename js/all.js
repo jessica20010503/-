@@ -42,6 +42,12 @@ $(document).ready(function () {
 			$(this).parent().siblings().find('.menu--drop').slideUp();
 	});
 	
+	
 });
 
- 
+function copyFn() {
+	var val = document.getElementById('copyMy');
+	window.getSelection().selectAllChildren(val);
+	document.execCommand("Copy");
+	alert("已成功複製！");
+}
