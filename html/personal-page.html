@@ -93,9 +93,9 @@
                         </ul>
                     </div>
                     <!-- Button trigger modal -->
-                    <a href="" class="fr edit__btn dark-gray b-n mt-7 fwb" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">修改</a>
+                    <a href="" class="fr edit__btn dark-gray b-n mt-7 fwb" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1">修改</a>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header p-3">
@@ -188,6 +188,7 @@
                                         <div class=" w-80 m0-a">
                                                 <div class="tac">
                                                 <p class="fwb ">請輸入欲加值金額!!</p>
+                                                <span class="fwb dark-red fz-s">請注意:金額需大於 500,000 (TWD) / 14,000 (USD)</span>
                                                 </div>
                                                 <label for="TWD" class="dark-gray fz-s fwbr">台幣(TWD)</label>
                                                 <input type="text" name="TWD" id="TWD" class="br-s p-1 d-block w-100 mb-2 b-n">
@@ -214,14 +215,16 @@
                     <table class="w-100 tac mt-5 trade--table ">
                         <tr class="fwb">
                             <th>序號</th>
-                            <th>分析類型</th>
-                            <th>商品代號</th>
-                            <th>商品名稱</th>
-                            <th>資料週期</th>
-                            <th>開始時間</th>
-                            <th>結束時間</th>
-                            <th>技術指標</th>
-                            <th>分析策略</th>
+                            <th>策略<br>類型</th>
+                            <th>商品<br>代號</th>
+                            <th>商品<br>名稱</th>
+                            <th>資料<br>週期</th>
+                            <th>開始<br>時間</th>
+                            <th>結束<br>時間</th>
+                            <th>技術<br>指標一</th>
+                            <th>技術<br>指標二</th>
+                            <th>進場<br>策略</th>
+                            <th>出場<br>策略</th>
                             <th>演算法</th>
                         </tr>
                         <tr class="trade--table__item">
@@ -229,10 +232,12 @@
                             <td>一般交易</td>
                             <td>MNQ</td>
                             <td>小那斯達克</td>
-                            <td>Tick</td>
+                            <td>1分鐘</td>
                             <td>2020/10/11</td>
                             <td>2021/5/31</td>
-                            <td>RSI指標</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>均線策略</td>
                             <td>均線策略</td>
                             <td>-</td>
                         </tr>
@@ -245,7 +250,9 @@
                             <td>2001/03/11</td>
                             <td>2008/09/25</td>
                             <td>MACD指標</td>
-                            <td>布林通道策略</td>
+                            <td>DMI趨向指標</td>
+                            <td>MA快線向上突破慢線</td>
+                            <td>空單K值向上跌破D值</td>
                             <td>隨機森林</td>
                         </tr>
                         <tr class="trade--table__item">
@@ -253,22 +260,26 @@
                             <td>智能交易</td>
                             <td>TY</td>
                             <td>十年美國債劵</td>
-                            <td>一週</td>
+                            <td>3 週</td>
                             <td>2005/09/01</td>
                             <td>2011/05/03</td>
-                            <td></td>
-                            <td>均線策略</td>
-                            <td>-</td>
+                            <td>威廉指標</td>
+                            <td>BIAS乖離率</td>
+                            <td>RSI < 50及MA向下跌破</td>
+                            <td>停損RSI < 30</td>
+                            <td>SVM支援向量機</td>
                         </tr>
                         <tr class="trade--table__item">
                             <td>4</td>
                             <td>一般交易</td>
                             <td>C</td>
                             <td>玉米</td>
-                            <td>一個月</td>
+                            <td>1 個月</td>
                             <td>2018/06/24</td>
                             <td>2021/08/23</td>
                             <td>BIAS乖離率</td>
+                            <td>EMA指數平均數指標</td>
+                            <td>ORB策略</td>
                             <td>ORB策略</td>
                             <td>Ada Boost</td>
                         </tr>
